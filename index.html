@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logboek - Prototyping Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(149, 128, 118);
+            color: #432616;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Achtergronddecoratie */
+        .bg-decor {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            top: -100px;
+            left: -100px;
+            z-index: 0;
+            transform: rotate(45deg);
+        }
+
+        .bg-decor2 {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            bottom: -50px;
+            right: -50px;
+            z-index: 0;
+            transform: rotate(-30deg);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 50px;
+            opacity: 0.8;
+            font-style: normal;
+        }
+
+        .lesson-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 50px auto;
+            max-width: 800px;
+        }
+
+        .lesson-cards a {
+            display: block;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.95); /* rustig wit */
+            color: #432616;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .lesson-cards a:hover {
+            transform: translateY(-5px) rotate(-1deg); /* kleine speelse draai */
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            font-size: 0.9em;
+            opacity: 0.7;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-decor"></div>
+    <div class="bg-decor2"></div>
+
+    <div class="container">
+        <h1>LOGBOEK</h1>
+        <h2>Kaori Lauwers</h2>
+        <h3>Prototyping Tools</h3>
+
+        <ul class="lesson-cards">
+            <li><a href="week1.html">Les 1</a></li>
+            <li><a href="week2.html">Les 2</a></li>
+            <li><a href="week3.html">Les 3</a></li>
+            <li><a href="week4.html">Les 4</a></li>
+            <li><a href="week5.html">Les 5</a></li>
+            <li><a href="week6.html">Les 6</a></li>
+        </ul>
+
+        <div class="footer">
+            Grafische &amp; Digitale Media - AP Hogeschool
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+        
+      
+
+
+
+
+
+
+
+

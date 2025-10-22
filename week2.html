@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 2: Mid-fi Prototypes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(149, 128, 118);
+            color: #432616;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigatie bovenaan */
+        nav ul {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #432616;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: rgba(255,255,255,0.85);
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #5a3e1b;
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 1px solid #432616;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a.inner {
+            color: #6b4226;
+            text-decoration: none;
+        }
+
+        a.inner:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            opacity: 0.7;
+            margin: 30px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigatie -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Logboek</a></li>
+                <li><a href="week1.html">Les 1</a></li>
+                <li><a href="week2.html">Les 2</a></li>
+                <li><a href="week3.html">Les 3</a></li>
+                <li><a href="week4.html">Les 4</a></li>
+                <li><a href="week5.html">Les 5</a></li>
+                <li><a href="week6.html">Les 6</a></li>
+            </ul>
+        </nav>
+
+        <h1>Les 2: Mid-fi Prototypes</h1>
+
+        <div class="section">
+            <h2>1. Wijzigingen & Redenen</h2>
+            <ul>
+                <li>Wat heb ik aangepast?
+                    <ul>
+                        <li>Ontwerp volledig herwerkt naar mid-fidelity niveau</li>
+                        <li>Meer bestemmingen toegevoegd bij overzichtscherm</li>
+                        <li>Kleurenpalet verfijnd: blauwe tinten/accenten (zoals logo NMBS), witte tekst & zwarte tekst, accentkleuren voor duidelijkheid</li>
+                        <li>Dikte van tekst gevarieerd per informatieniveau (tijd vet, stops lichtgrijs)</li>
+                        <li>Nieuwe iconen toegevoegd</li>
+                        <li>Lettertype aangepast voor schermleesbaarheid</li>
+                        <li>Scheidingslijnen tussen rijen gemaakt voor visuele rust</li>
+                        <li>Volgorde herwerkt (tijd → bestemming → spoor)</li>
+                    </ul>
+                </li>
+                <li>Waarom?
+                    <ul>
+                        <li>Visuele hiërarchie versterkt de oriëntatie: gebruikers scannen tijd eerst</li>
+                        <li>Contrast en kleurgebruik maken snelle interpretatie mogelijk bij drukke perrons</li>
+                        <li>Typografie en lijndikte creëren balans tussen informatie en leescomfort</li>
+                        <li>Scheidingslijnen geven vollediger beeld zonder overbelasting</li>
+                        <li>Minimalistische pictogrammen zorgen voor snel begrip (ook anderstaligen begrijpen dit)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. UX/UI-vragen die mijn beslissingen stuurden</h2>
+            <ul>
+                <li>Hoe zorg ik voor visuele rust terwijl ik veel info toon?</li>
+                <li>Hoe maak ik meertalige informatie overzichtelijk zonder verwarring?</li>
+                <li>Welke info verdient visuele prioriteit (tijd, spoor, bestemming)?</li>
+                <li>Hoe zorg ik dat iconen universeel herkenbaar zijn (zonder tekst)?</li>
+                <li>Hoe behoud ik samenhang tussen perronscherm, treinscherm en wagonscherm?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Usability Checks</h2>
+            <ul>
+                <li>Test met 2 gebruikers (zus + vriend):
+                    <ul>
+                        <li>Vraag: “Kun je in 5 seconden zien waar je wagon met fietsplekken stopt?” – Resultaat: Ja, iconen duidelijk zichtbaar</li>
+                        <li>Vraag: “Wat trekt eerst je aandacht op het treinscherm?” – Resultaat: De vertrektijd en bestemming (vetgedrukte tekst werkt goed)</li>
+                    </ul>
+                </li>
+                <li>Observatie:
+                    <ul>
+                        <li>Gebruikers kijken eerst naar grote tijd en spoor → hiërarchie functioneert</li>
+                        <li>Pictogrammen sneller begrepen dan tekst, vooral bij niet-Nederlandstaligen</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Reflectie & Next steps</h2>
+            <ul>
+                <li>Wat werkte goed? duidelijke visuele structuur, leesbaar en logische opbouw</li>
+                <li>Wat minder? drie talen tegelijk</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Grafische &amp; Digitale Media - AP Hogeschool
+        </div>
+    </div>
+</body>
+</html>
+
