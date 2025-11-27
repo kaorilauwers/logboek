@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les 7: GSM Treinschermen</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[rgb(149,128,118)] text-[#432616] font-[Arial]">
+
+<div class="max-w-[1000px] mx-auto p-5 relative z-10">
+
+    <!-- Navigatie -->
+    <nav class="my-6">
+        <ul class="flex justify-center gap-3 list-none p-0 m-0">
+            <li><a href="index.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Logboek</a></li>
+            <li><a href="week1.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 1</a></li>
+            <li><a href="week2.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 2</a></li>
+            <li><a href="week3.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 3</a></li>
+            <li><a href="week4.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 4</a></li>
+            <li><a href="week5.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 5</a></li>
+            <li><a href="week6.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 6</a></li>
+            <li><a href="week7.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 7</a></li>
+        </ul>
+    </nav>
+
+    <!-- Titel -->
+    <h1 class="text-center text-3xl font-bold mb-8">Les 7: Treinschermen → GSM Schermen</h1>
+
+    <!-- Secties -->
+    <div class="space-y-6">
+        <div class="bg-white/80 rounded-xl p-5 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">Wat ik heb gedaan</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Ik heb mijn treinschermen van vorige lessen omgezet naar een mobiele versie.</li>
+                <li>De layout aangepast zodat alles duidelijk leesbaar is op een klein gsm-scherm.</li>
+                <li>Bepaalde elementen herplaatst: grotere tijd, simpelere iconen, minder rijen tekst.</li>
+                <li>De info compacter gemaakt zonder belangrijke elementen te verliezen.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white/80 rounded-xl p-5 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">Waarom deze aanpassingen?</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Op een gsm moet info sneller te scannen zijn → dus grotere hiërarchie.</li>
+                <li>Veel minder ruimte → dus minder details dan het grote treinscherm.</li>
+                <li>Iconen moesten simpeler en groter om zichtbaar te blijven.</li>
+                <li>Een gsm wordt vaak in beweging gebruikt (op perron, in trein).</li>
+            </ul>
+        </div>
+
+        <div class="bg-white/80 rounded-xl p-5 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">Mijn proces</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Eerst gekeken welke info echt nodig is voor een reiziger.</li>
+                <li>Daarna mijn treinscherm opgesplitst in blokken die geschikt zijn voor verticale scroll.</li>
+                <li>Verschillende versies getest qua grootte van tekst, iconen en spacing.</li>
+                <li>Ik heb ook afgestemd met mijn mid-fi ontwerp om de stijl te behouden.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white/80 rounded-xl p-5 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">Reflectie</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Het werkt goed op gsm: overzichtelijk en duidelijk.</li>
+                <li>Less is more: te veel info werd snel rommelig.</li>
+                <li>Volgende keer zou ik meer varianten testen zoals een donkere modus.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-sm opacity-70 mt-10">
+        Grafische &amp; Digitale Media - AP Hogeschool
+    </div>
+</div>
+
+<!-- Afbeelding rechts boven content -->
+<div class="fixed top-[150px] right-5 flex flex-col gap-5 z-50">
+    <div class="relative inline-block group">
+        <img src="les 7/schermengsm.png" class="border-2 border-[#432616] rounded-xl bg-white shadow-lg cursor-pointer object-contain w-[180px] transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1" onclick="openLightbox(this.src)">
+        <span class="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-[12px] text-white bg-black/50 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">Klik om te vergroten</span>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 bg-black/80 flex justify-center items-center z-50">
+    <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+</div>
+
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+function openLightbox(src){
+    lightboxImg.src = src;
+    lightbox.classList.remove("hidden");
+}
+
+lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

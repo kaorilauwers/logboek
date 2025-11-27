@@ -1,146 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les: Typografie en opmaak in HTML & CSS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: rgb(149, 128, 118);
-            color: #432616;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Navigatie bovenaan */
-        nav ul {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            list-style: none;
-            padding: 20px 0;
-            margin: 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #432616;
-            font-weight: bold;
-            padding: 10px 15px;
-            background-color: rgba(255,255,255,0.85);
-            border-radius: 12px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        nav a:hover {
-            transform: translateY(-2px);
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            background-color: rgba(255, 255, 255, 0.85);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
-        }
-
-        h2 {
-            color: #5a3e1b;
-            margin-top: 0;
-            font-size: 1.5em;
-            border-bottom: 1px solid #432616;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        a.inner {
-            color: #6b4226;
-            text-decoration: none;
-        }
-
-        a.inner:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            font-size: 0.9em;
-            opacity: 0.7;
-            margin: 30px 0 20px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les 3: Typografie en opmaak in HTML & CSS</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <!-- Navigatie -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Logboek</a></li>
-                <li><a href="week1.html">Les 1</a></li>
-                <li><a href="week2.html">Les 2</a></li>
-                <li><a href="week3.html">Les 3</a></li>
-                <li><a href="week4.html">Les 4</a></li>
-                <li><a href="week5.html">Les 5</a></li>
-                <li><a href="week6.html">Les 6</a></li>
-            </ul>
-        </nav>
+<body class="bg-[rgb(149,128,118)] text-[#432616] font-[Arial]">
 
-        <h1>Les: Typografie en opmaak in HTML & CSS</h1>
+<!-- Container -->
+<div class="max-w-[1000px] mx-auto p-5 relative z-10">
 
-        <div class="section">
-            <h2>1. Oefening: Typografie op schermen</h2>
-            <ul>
-                <li>Experimenteren met kleur, typografie en witruimte op een webpagina via <a href="https://bpuieditor.netlify.app/" target="_blank" class="inner">BPUiEditor</a></li>
-                <li>Aanpassen van titels (h1–h6), paragrafen en lijsten</li>
-                <li>Testen van verschillende lettertypes, groottes, spatiëring en kleuren</li>
-                <li>Observeren van hoe typografie de leesbaarheid en visuele hiërarchie beïnvloedt</li>
-                <li>Maken van screenshots van het eindresultaat voor het leerplatform</li>
-            </ul>
-        </div>
+    <!-- Navigatie -->
+    <nav class="my-6">
+        <ul class="flex justify-center gap-3 list-none p-0 m-0">
+            <li><a href="index.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Logboek</a></li>
+            <li><a href="week1.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 1</a></li>
+            <li><a href="week2.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 2</a></li>
+            <li><a href="week3.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 3</a></li>
+            <li><a href="week4.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 4</a></li>
+            <li><a href="week5.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 5</a></li>
+            <li><a href="week6.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 6</a></li>
+            <li><a href="week7.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 7</a></li>
+        </ul>
+    </nav>
 
-        <div class="section">
-            <h2>2. Export en opmaak in HTML & CSS</h2>
-            <ul>
-                <li>Ontwerp gemaakt voor het scherm van de centrale stationshal</li>
-                <li>Export naar HTML en CSS met behulp van ChatGPT</li>
-                <li>Prompt gebruikt voor de export, bijvoorbeeld:
-                    <ul>
-                        <li>"Create 3 HTML files based on these screens that include CSS and the import of the fonts. The font is Roboto Slab."</li>
-                    </ul>
-                </li>
-                <li>Gegenereerde bestanden bewaard in een map en hoofdpagina genaamd <code>index.html</code></li>
-                <li>Bestanden meegenomen naar de volgende les voor publicatie op GitHub en Netlify</li>
-            </ul>
-        </div>
+    <!-- Titel -->
+    <h1 class="text-center text-3xl font-bold mb-8">Les 3: Typografie en opmaak in HTML & CSS</h1>
 
-        <!-- Footer -->
-        <div class="footer">
-            Grafische &amp; Digitale Media - AP Hogeschool
-        </div>
+    <!-- Sectie 1 -->
+    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">1. Oefening: Typografie op schermen</h2>
+        <ul class="list-disc ml-6 space-y-2">
+            <li>Experimenteren met kleur, typografie en witruimte op een webpagina via <a href="https://bpuieditor.netlify.app/" target="_blank" class="text-[#6b4226] hover:underline">BPUiEditor</a></li>
+            <li>Aanpassen van titels (h1–h6), paragrafen en lijsten</li>
+            <li>Testen van verschillende lettertypes, groottes, spatiëring en kleuren</li>
+            <li>Observeren van hoe typografie de leesbaarheid en visuele hiërarchie beïnvloedt</li>
+            <li>Maken van screenshots van het eindresultaat voor het leerplatform</li>
+        </ul>
     </div>
+
+    <!-- Sectie 2 -->
+    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">2. Export en opmaak in HTML & CSS</h2>
+        <ul class="list-disc ml-6 space-y-2">
+            <li>Ontwerp gemaakt voor het scherm van de centrale stationshal</li>
+            <li>Export naar HTML en CSS met behulp van ChatGPT</li>
+            <li>Prompt gebruikt voor de export, bijvoorbeeld:
+                <ul class="list-disc ml-6 space-y-1">
+                    <li>"Create 3 HTML files based on these screens that include CSS and the import of the fonts. The font is Roboto Slab."</li>
+                </ul>
+            </li>
+            <li>Gegenereerde bestanden bewaard in een map en hoofdpagina genaamd <code>index.html</code></li>
+            <li>Bestanden meegenomen naar de volgende les voor publicatie op GitHub en Netlify</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-sm opacity-70 mt-10">
+        Grafische &amp; Digitale Media - AP Hogeschool
+    </div>
+</div>
+
 </body>
 </html>
+
 
 
 
