@@ -75,17 +75,26 @@
     </div>
 </div>
 
-<!-- Afbeelding rechts boven content -->
-<div class="fixed top-[150px] right-5 flex flex-col gap-5 z-50">
+<!-- Afbeelding onderaan pagina -->
+<div class="w-full flex justify-center mt-12 mb-10">
     <div class="relative inline-block group">
-        <img src="les 7/schermengsm.png" class="border-2 border-[#432616] rounded-xl bg-white shadow-lg cursor-pointer object-contain w-[180px] transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1" onclick="openLightbox(this.src)">
-        <span class="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-[12px] text-white bg-black/50 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">Klik om te vergroten</span>
+        <img src="les 7/schermengsm.png" 
+             class="border-2 border-[#432616] rounded-xl bg-white shadow-lg cursor-pointer object-contain 
+                    w-[500px] transition-transform duration-200 transform 
+                    group-hover:scale-105 group-hover:-translate-y-1"
+             onclick="openLightbox(this.src)">
+        
+        <span class="absolute bottom-1 left-1/2 transform -translate-x-1/2 
+                     text-[12px] text-white bg-black/50 px-2 rounded 
+                     opacity-0 group-hover:opacity-100 transition-opacity">
+            Klik om te vergroten
+        </span>
     </div>
 </div>
 
-<!-- Lightbox -->
+<!-- Lightbox zonder extra rand/shadow -->
 <div id="lightbox" class="hidden fixed inset-0 bg-black/80 flex justify-center items-center z-50">
-    <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+    <img id="lightbox-img" class="max-w-[90%] max-h-[90%]">
 </div>
 
 <script>
@@ -104,6 +113,7 @@ lightbox.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 

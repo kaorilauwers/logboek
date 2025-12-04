@@ -102,29 +102,33 @@
     </div>
 </div>
 
-<!-- Side Images rechts -->
-<div class="fixed top-[150px] right-5 flex flex-col gap-5 z-50">
-    <!-- Image 1 -->
+<!-- Afbeeldingen onderaan met kleinere verticale afbeelding -->
+<div class="w-full flex justify-center mt-12 mb-10 gap-6">
+
+    <!-- Verticale afbeelding links (nu kleiner) -->
     <div class="relative inline-block group">
         <img src="treinschermen voor in html/treinscherm 1.png"
-             class="border-2 border-[#432616] rounded-lg bg-white shadow-lg cursor-pointer transition-transform duration-200 group-hover:scale-110 group-hover:-translate-y-1"
-             onclick="openLightbox(this.src)" style="width:180px;">
-        <span class="absolute bottom-1 left-1/2 -translate-x-1/2 text-white text-xs bg-black/50 px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none">Klik om te vergroten</span>
+             class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[250px] h-auto object-contain"
+             onclick="openLightbox(this.src)">
+        <span class="absolute bottom-1 left-1/2 -translate-x-1/2 text-white text-xs bg-black/50 px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none">
+            Klik om te vergroten
+        </span>
     </div>
 
-    <!-- Image 2 -->
-    <div class="relative inline-block group">
-        <img src="treinschermen voor in html/treinscherm 2.png"
-             class="border-2 border-[#432616] rounded-lg bg-white shadow-lg cursor-pointer transition-transform duration-200 group-hover:scale-110 group-hover:-translate-y-1"
-             onclick="openLightbox(this.src)" style="width:250px;">
+    <!-- Twee horizontale afbeeldingen rechts in een kolom -->
+    <div class="flex flex-col gap-6">
+        <div class="relative inline-block group">
+            <img src="treinschermen voor in html/treinscherm 2.png"
+                 class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] h-auto object-contain"
+                 onclick="openLightbox(this.src)">
+        </div>
+        <div class="relative inline-block group">
+            <img src="treinschermen voor in html/treinscherm 3.png"
+                 class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] h-auto object-contain"
+                 onclick="openLightbox(this.src)">
+        </div>
     </div>
 
-    <!-- Image 3 -->
-    <div class="relative inline-block group">
-        <img src="treinschermen voor in html/treinscherm 3.png"
-             class="border-2 border-[#432616] rounded-lg bg-white shadow-lg cursor-pointer transition-transform duration-200 group-hover:scale-110 group-hover:-translate-y-1"
-             onclick="openLightbox(this.src)" style="width:250px;">
-    </div>
 </div>
 
 <!-- Lightbox -->
@@ -145,6 +149,10 @@ document.getElementById("lightbox").addEventListener("click", () => {
 
 </body>
 </html>
+
+
+
+
 
 
 
