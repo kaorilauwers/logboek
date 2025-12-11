@@ -1,154 +1,171 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Les 2: Mid-fi Prototypes</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 2: Mid-fi Prototypes</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body, html { font-family: 'Quicksand', sans-serif; }
+    </style>
 </head>
-<body class="font-[Arial] bg-[rgb(149,128,118)] text-[#432616]">
 
-<!-- Tekstcontainer -->
-<div class="max-w-[1000px] mx-auto p-5 relative z-10">
+<body class="bg-[rgb(149,128,118)] text-[#432616]">
 
-    <!-- Navigatie -->
-    <nav class="my-6">
-        <ul class="flex justify-center gap-3 list-none p-0 m-0">
-            <li><a href="index.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Logboek</a></li>
-            <li><a href="week1.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 1</a></li>
-            <li><a href="week2.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 2</a></li>
-            <li><a href="week3.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 3</a></li>
-            <li><a href="week4.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 4</a></li>
-            <li><a href="week5.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 5</a></li>
-            <li><a href="week6.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 6</a></li>
-            <li><a href="week7.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold shadow hover:-translate-y-1 hover:shadow-lg transition">Les 7</a></li>
-        </ul>
-    </nav>
+    <div class="max-w-[1000px] mx-auto p-5 relative z-10">
 
-    <!-- Titel -->
-    <h1 class="text-center text-3xl font-bold mb-8">Les 2: Mid-fi Prototypes</h1>
-
-    <!-- Sectie 1 -->
-    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
-        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">1. Wijzigingen & Redenen</h2>
-        <ul class="list-disc ml-6 space-y-2">
-            <li>Wat heb ik aangepast?
-                <ul class="list-disc ml-6 space-y-1">
-                    <li>Ontwerp volledig herwerkt naar mid-fidelity</li>
-                    <li>Meer bestemmingen toegevoegd</li>
-                    <li>Kleurenpalet verfijnd</li>
-                    <li>Diverse tekstdiktes voor hiërarchie</li>
-                    <li>Nieuwe iconen toegevoegd</li>
-                    <li>Lettertype aangepast voor leesbaarheid</li>
-                    <li>Scheidingslijnen toegevoegd</li>
-                    <li>Volgorde info herwerkt (tijd → bestemming → spoor)</li>
-                </ul>
-            </li>
-            <li>Waarom?
-                <ul class="list-disc ml-6 space-y-1">
-                    <li>Betere visuele hiërarchie</li>
-                    <li>Duidelijk contrast op drukke perrons</li>
-                    <li>Leescomfort door typografie</li>
-                    <li>Scheidingslijnen creëren structuur</li>
-                    <li>Iconen zorgen voor snelle interpretatie</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Sectie 2 -->
-    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
-        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">2. UX/UI-vragen die mijn beslissingen stuurden</h2>
-        <ul class="list-disc ml-6 space-y-2">
-            <li>Hoe toon ik veel informatie maar behoud rust?</li>
-            <li>Hoe houd ik meertalige info overzichtelijk?</li>
-            <li>Welke info krijgt prioriteit (tijd, spoor, bestemming)?</li>
-            <li>Hoe blijven iconen universeel?</li>
-            <li>Hoe zorg ik voor samenhang tussen alle schermtypes?</li>
-        </ul>
-    </div>
-
-    <!-- Sectie 3 -->
-    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
-        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">3. Usability Checks</h2>
-        <ul class="list-disc ml-6 space-y-3">
-            <li>Test met 2 gebruikers:
-                <ul class="list-disc ml-6 space-y-1">
-                    <li>Vraag: “Kun je in 5 seconden de wagon met fietsplekken vinden?” — Ja</li>
-                    <li>Vraag: “Wat zie je eerst?” — Tijd + bestemming</li>
-                </ul>
-            </li>
-            <li>Observaties:
-                <ul class="list-disc ml-6 space-y-1">
-                    <li>Gebruikers kijken eerst naar tijd en spoor</li>
-                    <li>Iconen sneller begrepen dan tekst</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Sectie 4 -->
-    <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
-        <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">4. Reflectie & Next steps</h2>
-        <ul class="list-disc ml-6 space-y-2">
-            <li>Wat werkte goed? Duidelijke structuur</li>
-            <li>Wat minder? Meerdere talen tegelijk</li>
-        </ul>
-    </div>
-
-    <!-- Footer -->
-    <div class="text-center text-sm opacity-70 mt-10">
-        Grafische &amp; Digitale Media - AP Hogeschool
-    </div>
-</div>
-
-<!-- Afbeeldingen onderaan met kleinere verticale afbeelding -->
-<div class="w-full flex justify-center mt-12 mb-10 gap-6">
-
-    <!-- Verticale afbeelding links (nu kleiner) -->
-    <div class="relative inline-block group">
-        <img src="treinschermen voor in html/treinscherm 1.png"
-             class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[250px] h-auto object-contain"
-             onclick="openLightbox(this.src)">
-        <span class="absolute bottom-1 left-1/2 -translate-x-1/2 text-white text-xs bg-black/50 px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none">
-            Klik om te vergroten
-        </span>
-    </div>
-
-    <!-- Twee horizontale afbeeldingen rechts in een kolom -->
-    <div class="flex flex-col gap-6">
-        <div class="relative inline-block group">
-            <img src="treinschermen voor in html/treinscherm 2.png"
-                 class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] h-auto object-contain"
-                 onclick="openLightbox(this.src)">
+          <!-- Naam bovenaan -->
+        <div class="text-center mb-4 text-lg font-semibold opacity-90">
+            Kaori Lauwers - 1GDM1
         </div>
-        <div class="relative inline-block group">
-            <img src="treinschermen voor in html/treinscherm 3.png"
-                 class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] h-auto object-contain"
-                 onclick="openLightbox(this.src)">
+
+        <!-- Navigatie -->
+        <nav class="my-6">
+            <ul class="flex justify-center gap-3 list-none p-0 m-0">
+                <li><a href="index.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Logboek</a></li>
+                <li><a href="week1.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 1</a></li>
+                <li><a href="week2.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 2</a></li>
+                <li><a href="week3.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 3</a></li>
+                <li><a href="week4.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 4</a></li>
+                <li><a href="week5.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 5</a></li>
+                <li><a href="week6.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 6</a></li>
+                <li><a href="week7.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 7</a></li>
+                <li><a href="week8.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 8</a></li>
+                <li><a href="week9.html" class="px-4 py-2 rounded-xl bg-white/80 font-bold text-[#432616] shadow hover:-translate-y-1 hover:shadow-lg transition">Les 9</a></li>
+            </ul>
+        </nav>
+
+        <!-- Titel -->
+        <h1 class="text-center text-3xl font-bold mb-8">Les 2: Mid-fi Prototypes</h1>
+
+        <!-- SECTIE 1 -->
+        <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">1. Wijzigingen & Redenen</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Wat heb ik aangepast?
+                    <ul class="list-disc ml-6 space-y-1">
+                        <li>Ontwerp volledig herwerkt naar mid-fidelity</li>
+                        <li>Meer bestemmingen toegevoegd</li>
+                        <li>Kleurenpalet verfijnd</li>
+                        <li>Diverse tekstdiktes voor hiërarchie</li>
+                        <li>Nieuwe iconen toegevoegd</li>
+                        <li>Lettertype aangepast voor leesbaarheid</li>
+                        <li>Scheidingslijnen toegevoegd</li>
+                        <li>Volgorde info herwerkt (tijd → bestemming → spoor)</li>
+                    </ul>
+                </li>
+                <li>Waarom?
+                    <ul class="list-disc ml-6 space-y-1">
+                        <li>Betere visuele hiërarchie</li>
+                        <li>Duidelijk contrast op drukke perrons</li>
+                        <li>Leescomfort door typografie</li>
+                        <li>Scheidingslijnen creëren structuur</li>
+                        <li>Iconen zorgen voor snelle interpretatie</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SECTIE 2 -->
+        <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">2. UX/UI-vragen die mijn beslissingen stuurden</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Hoe toon ik veel informatie maar behoud rust?</li>
+                <li>Hoe houd ik meertalige info overzichtelijk?</li>
+                <li>Welke info krijgt prioriteit?</li>
+                <li>Hoe blijven iconen universeel?</li>
+                <li>Hoe zorg ik voor samenhang tussen alle schermtypes?</li>
+            </ul>
+        </div>
+
+        <!-- SECTIE 3 -->
+        <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">3. Usability Checks</h2>
+            <ul class="list-disc ml-6 space-y-3">
+                <li>Test met 2 gebruikers:
+                    <ul class="list-disc ml-6 space-y-1">
+                        <li>Vraag: “Kun je in 5 seconden de wagon met fietsplekken vinden?” — Ja</li>
+                        <li>Vraag: “Wat zie je eerst?” — Tijd + bestemming</li>
+                    </ul>
+                </li>
+                <li>Observaties:
+                    <ul class="list-disc ml-6 space-y-1">
+                        <li>Gebruikers kijken eerst naar tijd en spoor</li>
+                        <li>Iconen sneller begrepen dan tekst</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SECTIE 4 -->
+        <div class="bg-white/80 rounded-xl p-5 mb-6 shadow">
+            <h2 class="text-xl font-bold text-[#5a3e1b] border-b border-[#432616] pb-1 mb-3">4. Reflectie & Next steps</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Wat werkte goed? Duidelijke structuur</li>
+                <li>Wat minder? Meerdere talen tegelijk</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-sm opacity-70 mt-10">
+            Grafische &amp; Digitale Media - AP Hogeschool
         </div>
     </div>
 
-</div>
+    <!-- AFBEELDINGEN -->
+    <div class="w-full flex justify-center mt-12 mb-10 gap-6">
 
-<!-- Lightbox -->
-<div id="lightbox" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
-    <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
-</div>
+        <!-- Verticale afbeelding -->
+        <div class="relative inline-block group">
+            <img src="treinschermen voor in html/treinscherm 1.png"
+                class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[250px] object-contain"
+                onclick="openLightbox(this.src)">
+        </div>
 
-<script>
-function openLightbox(src){
-    document.getElementById("lightbox-img").src = src;
-    document.getElementById("lightbox").classList.remove("hidden");
-}
+        <!-- Twee horizontale afbeeldingen -->
+        <div class="flex flex-col gap-6">
+            <div class="relative inline-block group">
+                <img src="treinschermen voor in html/treinscherm 2.png"
+                    class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] object-contain"
+                    onclick="openLightbox(this.src)">
+            </div>
 
-document.getElementById("lightbox").addEventListener("click", () => {
-    document.getElementById("lightbox").classList.add("hidden");
-});
-</script>
+            <div class="relative inline-block group">
+                <img src="treinschermen voor in html/treinscherm 3.png"
+                    class="border-2 border-[#432616] rounded-lg shadow-lg cursor-pointer transition-transform duration-200 transform group-hover:scale-105 group-hover:-translate-y-1 w-[400px] object-contain"
+                    onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
+        <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+    </div>
+
+    <script>
+        function openLightbox(src){
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").classList.remove("hidden");
+        }
+
+        document.getElementById("lightbox").addEventListener("click", () => {
+            document.getElementById("lightbox").classList.add("hidden");
+        });
+    </script>
 
 </body>
 </html>
+
+
+
 
 
 
